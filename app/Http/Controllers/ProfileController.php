@@ -31,7 +31,7 @@ class ProfileController extends Controller
         if (null==$id) {
             return response ("Please provide an ID", 400);
         } else {
-            return $data;
+            return response()->json($data, 200);
         }
         
     }
